@@ -3,8 +3,8 @@ import React from 'react';
 interface ButtonInterface {
   children?: React.ReactNode;
   className?: string;
-  type: 'button' | 'submit' | 'reset';
-  onClick: () => void;
+  type?: 'button' | 'submit' | 'reset';
+  onClick?: () => void;
 }
 
 export default function Button({

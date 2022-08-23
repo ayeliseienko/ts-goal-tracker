@@ -4,9 +4,9 @@ interface ButtonInterface {
   input: {
     id: string;
     type: string;
-    placeholder: string;
-    onBlur: () => void;
-    onChange: () => void;
+    placeholder?: string;
+    onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
+    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
     value: string;
   };
   label: { isVisible: boolean; title: string };
